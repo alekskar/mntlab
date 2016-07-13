@@ -62,6 +62,7 @@ It is an environment variable which point at  Catalina "build" or "root" directo
 /opt/apache/tomcat/7.0.62
 ```
 **What users run httpd and tomcat processes? How is it configured?**
+![image3](https://github.com/alekskar/mntlab/blob/master/Troubleshooting/sources/apache_user.png "httpd users")
 
 run command *ps -ef | grep httpd* show us that root httpd process run under root user and child processes run under apache user
 this behaviour is described in httpd.conf file.
