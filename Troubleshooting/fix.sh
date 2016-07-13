@@ -5,14 +5,13 @@ sed -i -e '/^<VirtualHost/,+6 s/^/#/' /etc/httpd/conf/httpd.conf
 sed -i -e '/<VirtualHost/s/mntlab/*/' /etc/httpd/conf.d/vhost.conf
 #fix issue 2
 sed -i -e '/> \/dev\/null/s/>/#>/' /etc/init.d/tomcat
-sed -i -e '/^export [JC]A/d' /home/tomcat/.bashrc 
+sed -i -e '/^export [JC]A/d' /home/tomcat/.bashrc
+chown -R tomcat:tomcat /opt/apache/tomcat/7.0.62/logs/
 #fix issue 3
 alternatives --config java <<< '1'
 #fix issue 4
 sed -i -e 's/worker-jk@ppname/tomcat.worker/g' /etc/httpd/conf.d/workers.properties
 sed -i -e 's/192.168.56.100/127.0.0.1/' /etc/httpd/conf.d/workers.properties
-#fix issue 5
-chown -R tomcat:tomcat /opt/apache/tomcat/7.0.62/logs/
 sed -i -e 's/192.168.56.10/127.0.0.1/g'  /opt/apache/tomcat/7.0.62/conf/server.xml
 # add tomcat to autostart with reboot
 chkconfig tomcat on
