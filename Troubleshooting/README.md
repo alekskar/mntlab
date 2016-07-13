@@ -1,4 +1,4 @@
-
+##Troubleshoting
 **What java version is installed?**
 
 We can determine which version of the JDK is the default by typing
