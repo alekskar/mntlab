@@ -5,7 +5,10 @@ We can determine which version of the JDK is the default by typing
 ```
 java -version
 ```
-![image](https://github.com/alekskar/mntlab/blob/master/Troubleshooting/sources/javaver.png "Java Version")
+
+![image1](https://github.com/alekskar/mntlab/blob/master/Troubleshooting/sources/javaver.png "Java Version")
+
+
 **How was it installed and configured?**
 ```
 Java was installed via unpackage (rpm -qi java does't return result)
@@ -40,6 +43,10 @@ files are:
 **Where is JAVA_HOME and what is it?**
 
 JAVA_HOME is an environment variable that helps to locate JDK and JRE to other applications such as Tomcat
+at host it configured via alternatives which refer to symlink /usr
+
+![image2](https://github.com/alekskar/mntlab/blob/master/Troubleshooting/sources/javasetup.png "JAVA HOME")
+
 ```
 JAVA_HOME=/opt/oracle/java/x64/jdk1.7.0_79
 ```
