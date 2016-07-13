@@ -58,3 +58,7 @@ It is an environment variable which point at  Catalina "build" or "root" directo
 
 **What does it mean: “load average: 1.18, 0.95, 0.83”?**
 
+| Day     | Meal    | Price |
+| --------|---------|-------|
+| Monday  | pasta   | $6    |
+| Tuesday | chicken | $8    |
