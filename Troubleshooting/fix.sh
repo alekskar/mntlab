@@ -38,6 +38,7 @@ COMMIT
 EOF
 #return immutable attrubute
 chattr -i /etc/sysconfig/iptables
+service iptables restart
 
 
 
