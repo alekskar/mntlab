@@ -1,4 +1,4 @@
-##Troubleshoting
+##Troubleshooting
 **What java version is installed?**
 
 We can determine which version of the JDK is the default by typing
@@ -8,7 +8,7 @@ java -version
 **How was it installed and configured?**
 ```
 Java was installed via unpackage (rpm -qi java does't return result)
-Java vas configured via alternatives
+Java was configured via alternatives
 ```
 **Where are log files of tomcat and httpd?**
 
@@ -77,5 +77,5 @@ On multi-processor system, the load is relative to the number of processor cores
 
 | n   | issue           | How to find       |Time to find | How to fix            | Time to fix |
 | ----| ----------------|-------------------|-------------|-----------------------|-------------|
-|   1  | Monday          |           pasta   |                 $6    |        1     |2|
+|   1  | Site is not available         | curl -IL   |                 $6    |        1     |2|
 
