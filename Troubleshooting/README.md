@@ -87,6 +87,8 @@ On multi-processor system, the load is relative to the number of processor cores
 The "100% utilization" mark is 1.00 on a single-core system, 2.00, on a dual-core, 4.00.
 ```
 
+##Report Table:
+
 | n   | Issue           | How to find       |Time to find | How to fix            | Time to fix |
 | ----| ----------------|-------------------|-------------|-----------------------|-------------|
 |   1  | Site is not available | internal:curl -IL 192.168.56.10 return 302 response, and redirect to mntlab  | 1 min  | check local availability: curl -IL 192.168.56.10 return 302 and 503 response - problem with different configurations. Fix httpd.conf (comment <Virtualhost block ) and vhost.conf (replace in Virtualhost directory listen from mntlab to all interfaces). Restart apache  |20|
