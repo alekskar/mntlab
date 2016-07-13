@@ -71,8 +71,11 @@ tomcat is running under tomcat user. It was set up in init script /etc/init.d/to
 
 **What does it mean: “load average: 1.18, 0.95, 0.83”?**
 ```
-The three numbers represent averages load and queue of CPU over progressively longer periods of time (1,5,15 min). On single core mashines 1,70 means that system is overloaded and we have queue.
-On multi-processor system, the load is relative to the number of processor cores available. The "100% utilization" mark is 1.00 on a single-core system, 2.00, on a dual-core, 4.00.
+The three numbers represent averages load and queue of CPU over progressively
+longer periods of time (1,5,15 min). 
+On single core mashines 1,70 means that system is overloaded and we have queue.
+On multi-processor system, the load is relative to the number of processor cores available. 
+The "100% utilization" mark is 1.00 on a single-core system, 2.00, on a dual-core, 4.00.
 ```
 
 | n   | issue           | How to find       |Time to find | How to fix            | Time to fix |
