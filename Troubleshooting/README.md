@@ -60,5 +60,5 @@ It is an environment variable which point at  Catalina "build" or "root" directo
 
 | n   | Day     | Meal    | Price |
 | ----| --------|---------|-------|
-|     | Monday  | pasta   | $6    |
+|     | Monday  | pasta| $6    |
 |     | Tuesday | chicken | $8    |
