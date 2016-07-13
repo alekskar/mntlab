@@ -5,6 +5,7 @@ We can determine which version of the JDK is the default by typing
 ```
 java -version
 ```
+![image](https://github.com/alekskar/mntlab/blob/master/Troubleshooting/sources/javaver.png "Java Version")
 **How was it installed and configured?**
 ```
 Java was installed via unpackage (rpm -qi java does't return result)
